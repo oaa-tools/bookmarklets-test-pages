@@ -1,0 +1,18 @@
+{
+  "plugins": {
+    "metalsmith-markdown": {
+      "smartypants": true,
+      "gfm": true,
+      "tables": true
+    },
+    "metalsmith-in-place": {
+      "engine": "handlebars",
+      "partials": "partials"
+    },
+    "metalsmith-layouts": {
+      "engine": "handlebars",
+      "default": "base.hbs",
+      "partials": "partials"
+    }
+  }
+}
