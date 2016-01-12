@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Accessible Name: Form Controls</title>
+  <link href="css/core.css" rel="stylesheet">
+  <link href="css/table.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Accessible Name: Form Controls</h1>
+  </header>
+  <!--
+  <nav>
+    <h2>Navigation menu</h2>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  </nav>
+  -->
+  <main class="main-wrapper">
+    
+    <h2 id="test1">Labeling <code>input[type="text"]</code> Techniques</h2>
+
+    <table aria-labelledby="test1">
+      <thead>
+        <tr>
+          <th>Features</th>
+          <th>Test</th>
+          <th>Expected Results</th>
+          <th>Test Source Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <ul>
+              <li>labeling by reference</li>
+              <li>markup: <code>label[for]</code> element</li>
+            <ul>
+          </ul></ul></td>
+          <td>
+            <div id="test-c1">
+              <label for="text-11">Phone</label>
+              <input id="text-11" type="text" size="20">
+            </div>
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: "Phone"</li>
+              <li>FROM: label reference</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <div id="test-sc1" class="sourcecode"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling by encapsulation</li>
+              <li>markup: <code>label</code> element</li>
+            <ul>
+          </ul></ul></td>
+          <td>
+            <div id="test-c2">
+              <label>Phone
+               <input type="text" size="20">
+              </label>
+            </div>
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: "Phone"</li>
+              <li>FROM: label container</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <div id="test-sc2" class="sourcecode"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling using aria-label</li>
+              <li>markup: <code>aria-label</code> attribute</li>
+            <ul>
+          </ul></ul></td>
+          <td>
+            <div id="test-c3">
+              <div>Phone
+               <input type="text" size="20" aria-label="Phone">
+              </div>
+            </div>
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: "Phone"</li>
+              <li>FROM: aria-label</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <div id="test-sc3" class="sourcecode"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling using aria-labelledby</li>
+              <li>markup: <code>aria-labelledby</code> attribute</li>
+            <ul>
+          </ul></ul></td>
+          <td>
+            <div id="test-c4">
+              <div id="text-14">Phone</div>
+              <input type="text" size="20" aria-labelledby="text-14">
+            </div>
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: "Phone"</li>
+              <li>FROM: aria-labelledby</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <div id="test-sc4" class="sourcecode"></div>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling using title attribute</li>
+              <li>markup: <code>title</code> attribute</li>
+            <ul>
+          </ul></ul></td>
+          <td>
+            <div id="test-c5">
+              <div>Phone
+                  <input type="text" size="20" title="Phone">
+              </div>
+            </div>
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: "Phone"</li>
+              <li>FROM: title</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <div id="test-sc5" class="sourcecode"></div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <script src="lib/examples.js" type="text/javascript"></script>
+
+    <script>
+      sourceCode.add('test-sc1', 'test-c1')
+      sourceCode.add('test-sc2', 'test-c2')
+      sourceCode.add('test-sc3', 'test-c3')
+      sourceCode.add('test-sc4', 'test-c4')
+      sourceCode.add('test-sc5', 'test-c5')
+      sourceCode.make()
+    </script>
+
+  </main>
+  <!--
+  <footer>
+    <p>This is the footer.</p>
+  </footer>
+  -->
+</body>
+</html>
