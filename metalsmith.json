@@ -1,5 +1,13 @@
 {
   "plugins": {
+    "metalsmith-webpack": {
+      "context": "path.resolve(__dirname, './src/lib/')",
+      "entry": "./examples.js",
+      "output": {
+        "path": "/build/lib",
+        "filename": "examples.js"
+      }
+    },
     "metalsmith-markdown": {
       "smartypants": true,
       "gfm": true,
@@ -12,7 +20,8 @@
     "metalsmith-layouts": {
       "engine": "handlebars",
       "default": "base.hbs",
-      "partials": "partials"
+      "partials": "partials",
+      "pattern": "*.html"
     }
   }
 }

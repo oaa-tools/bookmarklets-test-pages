@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <title>{{ title }} | Metalsmith Page</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>{{ title }}</title>
+  <link href="css/core.css" rel="stylesheet">
+  <link href="css/table.css" rel="stylesheet">
 </head>
 <body>
   {{> header }}
+  <!--
   {{> nav }}
+  -->
   <main class="main-wrapper">
     {{{ contents }}}
   </main>
+  <!--
   {{> footer }}
+  -->
 </body>
 </html>

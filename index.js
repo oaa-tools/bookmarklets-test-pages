@@ -4,4 +4,4 @@ var Metalsmith = require('metalsmith'),
 Metalsmith(__dirname)
     .use(markdown())
     .destination('./build')
-    .build(function (err) { if(err) console.log(err) });
+    .build(function (err) { if (err) console.log(err) });
