@@ -1,8 +1,12 @@
 {
-  "name": "test-pages",
+  "name": "bookmarklets-test-pages",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bookmarklets Test Pages",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oaa-tools/bookmarklets-test-pages.git"
+  },
   "devDependencies": {
     "handlebars": "^4.0.5",
     "metalsmith": "^2.1.0",
