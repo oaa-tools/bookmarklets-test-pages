@@ -22,20 +22,17 @@ title: "Accessible Name: Form Controls"
             <ul>
           </ul></ul></td>
           <td class="test-box">
-            <div id="test-c1">
-              <label for="text-1">Phone</label>
-              <input id="text-1" type="text">
-            </div>
+            {{> input-text-01 }}
           </td>
           <td>
             <ul>
-              <li>ACC NAME: "Phone"</li>
+              <li>ACC NAME: Phone</li>
               <li>FROM: label reference</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
-            <div id="test-sc1" class="sourcecode"></div>
+            <pre class="src">{{raw "input-text-01"}}</pre>
           </td>
         </tr>
 
@@ -47,21 +44,17 @@ title: "Accessible Name: Form Controls"
             <ul>
           </ul></ul></td>
           <td class="test-box">
-            <div id="test-c2">
-              <label>Phone
-               <input type="text">
-              </label>
-            </div>
+            {{> input-text-02}}
           </td>
           <td>
             <ul>
-              <li>ACC NAME: "Phone"</li>
+              <li>ACC NAME: Phone</li>
               <li>FROM: label container</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
-            <div id="test-sc2" class="sourcecode"></div>
+            <pre class="src">{{raw "input-text-02"}}</pre>
           </td>
         </tr>
 
@@ -73,21 +66,17 @@ title: "Accessible Name: Form Controls"
             <ul>
           </ul></ul></td>
           <td class="test-box">
-            <div id="test-c3">
-              <div>Phone
-               <input type="text" aria-label="Phone">
-              </div>
-            </div>
+            {{> input-text-03}}
           </td>
           <td>
             <ul>
-              <li>ACC NAME: "Phone"</li>
+              <li>ACC NAME: Phone</li>
               <li>FROM: aria-label</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
-            <div id="test-sc3" class="sourcecode"></div>
+            <pre class="src">{{raw "input-text-03"}}</pre>
           </td>
         </tr>
 
@@ -99,20 +88,17 @@ title: "Accessible Name: Form Controls"
             <ul>
           </ul></ul></td>
           <td class="test-box">
-            <div id="test-c4">
-              <span id="text-4">Phone</span>
-              <input type="text" aria-labelledby="text-4">
-            </div>
+            {{> input-text-04}}
           </td>
           <td>
             <ul>
-              <li>ACC NAME: "Phone"</li>
+              <li>ACC NAME: Phone</li>
               <li>FROM: aria-labelledby</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
-            <div id="test-sc4" class="sourcecode"></div>
+            <pre class="src">{{raw "input-text-04"}}</pre>
           </td>
         </tr>
 
@@ -124,34 +110,19 @@ title: "Accessible Name: Form Controls"
             <ul>
           </ul></ul></td>
           <td class="test-box">
-            <div id="test-c5">
-              <div>Phone
-                  <input type="text" title="Phone">
-              </div>
-            </div>
+            {{> input-text-05}}
           </td>
           <td>
             <ul>
-              <li>ACC NAME: "Phone"</li>
+              <li>ACC NAME: Phone</li>
               <li>FROM: title</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
-            <div id="test-sc5" class="sourcecode"></div>
+            <pre class="src">{{raw "input-text-05"}}</pre>
           </td>
         </tr>
 
       </tbody>
     </table>
-
-    <script src="lib/examples.js" type="text/javascript"></script>
-
-    <script>
-      sourceCode.add('test-sc1', 'test-c1')
-      sourceCode.add('test-sc2', 'test-c2')
-      sourceCode.add('test-sc3', 'test-c3')
-      sourceCode.add('test-sc4', 'test-c4')
-      sourceCode.add('test-sc5', 'test-c5')
-      sourceCode.make()
-    </script>
