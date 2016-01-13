@@ -13,6 +13,9 @@
       "gfm": true,
       "tables": true
     },
+    "metalsmith-register-helpers": {
+      "directory": "./helpers"
+    },
     "metalsmith-in-place": {
       "engine": "handlebars",
       "partials": "partials"
