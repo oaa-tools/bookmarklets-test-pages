@@ -58,26 +58,13 @@ img {
 }
 
 code {
-  font-family: "Courier new", Courier, Monospace;
+  font-family: Courier, Monospace;
   font-weight: bold;
 }
 
-.sourcecode {
-  font-family: "Courier new", Courier, Monospace;
-  margin: 0;
-  padding: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  border: thin solid #DDDDDD;
-  font-size: 90%;
-  background-color: #FEFEFE;
-}
-
-#example {
-  margin-top: 1em;
-  margin-bottom: 2em;
-}
-
-#example li + li {
-  margin-top: .5em;
+pre.src {
+  font-family: Courier, Monospace;
+  font-size: 95%;
+  margin-top: 0.25em;
+  padding: 0;
 }
