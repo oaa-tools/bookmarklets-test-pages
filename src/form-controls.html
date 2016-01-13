@@ -2,15 +2,15 @@
 title: "Accessible Name: Form Controls"
 ---
 
-    <h2 id="test1">Labeling <code>input[type="text"]</code> Techniques</h2>
+    <h2 id="test1">Labeling Techniques: <code>input[type="text"]</code></h2>
 
     <table aria-labelledby="test1">
       <thead>
         <tr>
-          <th>Features</th>
-          <th>Test</th>
-          <th>Expected Results</th>
-          <th>Test Source Code</th>
+          <th style="width: 25%">Features</th>
+          <th style="width: 20%">Test</th>
+          <th style="width: 20%">Expected Results</th>
+          <th style="width: 35%">Test Source Code</th>
         </tr>
       </thead>
       <tbody>
@@ -21,10 +21,10 @@ title: "Accessible Name: Form Controls"
               <li>markup: <code>label[for]</code> element</li>
             <ul>
           </ul></ul></td>
-          <td>
+          <td class="test-box">
             <div id="test-c1">
-              <label for="text-11">Phone</label>
-              <input id="text-11" type="text" size="20">
+              <label for="text-1">Phone</label>
+              <input id="text-1" type="text">
             </div>
           </td>
           <td>
@@ -46,10 +46,10 @@ title: "Accessible Name: Form Controls"
               <li>markup: <code>label</code> element</li>
             <ul>
           </ul></ul></td>
-          <td>
+          <td class="test-box">
             <div id="test-c2">
               <label>Phone
-               <input type="text" size="20">
+               <input type="text">
               </label>
             </div>
           </td>
@@ -72,10 +72,10 @@ title: "Accessible Name: Form Controls"
               <li>markup: <code>aria-label</code> attribute</li>
             <ul>
           </ul></ul></td>
-          <td>
+          <td class="test-box">
             <div id="test-c3">
               <div>Phone
-               <input type="text" size="20" aria-label="Phone">
+               <input type="text" aria-label="Phone">
               </div>
             </div>
           </td>
@@ -98,10 +98,10 @@ title: "Accessible Name: Form Controls"
               <li>markup: <code>aria-labelledby</code> attribute</li>
             <ul>
           </ul></ul></td>
-          <td>
+          <td class="test-box">
             <div id="test-c4">
-              <div id="text-14">Phone</div>
-              <input type="text" size="20" aria-labelledby="text-14">
+              <span id="text-4">Phone</span>
+              <input type="text" aria-labelledby="text-4">
             </div>
           </td>
           <td>
@@ -116,7 +116,6 @@ title: "Accessible Name: Form Controls"
           </td>
         </tr>
 
-
         <tr>
           <td>
             <ul>
@@ -124,10 +123,10 @@ title: "Accessible Name: Form Controls"
               <li>markup: <code>title</code> attribute</li>
             <ul>
           </ul></ul></td>
-          <td>
+          <td class="test-box">
             <div id="test-c5">
               <div>Phone
-                  <input type="text" size="20" title="Phone">
+                  <input type="text" title="Phone">
               </div>
             </div>
           </td>
