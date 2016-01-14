@@ -26,7 +26,7 @@ title: "Accessible Name: Form Controls"
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
+              <li>ACC NAME: Phone:</li>
               <li>FROM: label reference</li>
               <li>ROLE: textbox</li>
             </ul>
@@ -48,35 +48,13 @@ title: "Accessible Name: Form Controls"
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
+              <li>ACC NAME: Phone:</li>
               <li>FROM: label container</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
             <pre class="src">{{raw "label-enc-input-text"}}</pre>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <ul>
-              <li>labeling using aria-label</li>
-              <li>markup: <code>aria-label</code> attribute</li>
-            </ul>
-          </td>
-          <td class="test-box">
-            {{> label-arl-input-text}}
-          </td>
-          <td>
-            <ul>
-              <li>ACC NAME: Phone</li>
-              <li>FROM: aria-label</li>
-              <li>ROLE: textbox</li>
-            </ul>
-          </td>
-          <td>
-            <pre class="src">{{raw "label-arl-input-text"}}</pre>
           </td>
         </tr>
 
@@ -92,13 +70,79 @@ title: "Accessible Name: Form Controls"
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
+              <li>ACC NAME: Phone:</li>
               <li>FROM: aria-labelledby</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
             <pre class="src">{{raw "label-alb-input-text"}}</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling using aria-label</li>
+              <li>markup: <code>aria-label</code> attribute</li>
+            </ul>
+          </td>
+          <td class="test-box">
+            {{> label-arl-input-text}}
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Phone number</li>
+              <li>FROM: aria-label</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">{{raw "label-arl-input-text"}}</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling using placeholder attribute</li>
+              <li>markup: <code>placeholder</code> attribute</li>
+            </ul>
+          </td>
+          <td class="test-box">
+            {{> label-plh-input-text}}
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: xxx-xxx-xxxx</li>
+              <li>FROM: placeholder</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">{{raw "label-plh-input-text"}}</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling by reference and using placeholder attribute</li>
+              <li>markup: <code>label</code> element, <code>placeholder</code> attribute</li>
+            </ul>
+          </td>
+          <td class="test-box">
+            {{> label-rpl-input-text}}
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Phone:</li>
+              <li>FROM: label reference</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">{{raw "label-rpl-input-text"}}</pre>
           </td>
         </tr>
 
@@ -114,7 +158,7 @@ title: "Accessible Name: Form Controls"
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
+              <li>ACC NAME: Phone number</li>
               <li>FROM: title</li>
               <li>ROLE: textbox</li>
             </ul>
