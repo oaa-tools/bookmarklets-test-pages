@@ -28,8 +28,8 @@
           <td class="test-box">
             <code class="element">input[type="text"]</code>
             <div>
-              <label for="text-01">Phone: </label>
-              <input type="text" id="text-01">
+              <label for="text-ref">Phone: </label>
+              <input type="text" id="text-ref">
             </div>
           </td>
           <td>
@@ -41,8 +41,8 @@
           </td>
           <td>
             <pre class="src">&lt;div&gt;
-  &lt;label for&#x3D;&quot;text-01&quot;&gt;Phone: &lt;/label&gt;
-  &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;text-01&quot;&gt;
+  &lt;label for&#x3D;&quot;text-ref&quot;&gt;Phone: &lt;/label&gt;
+  &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;text-ref&quot;&gt;
 &lt;/div&gt;
 </pre>
           </td>
@@ -180,9 +180,9 @@
           <td class="test-box">
             <code class="element">input[type="text"]</code>
             <div>
-              <div>Phone:
-                <input type="text" aria-label="Phone">
-              </div>
+              Phone:
+              <input type="text"
+                     aria-label="Phone number">
             </div>
           </td>
           <td>
@@ -194,9 +194,9 @@
           </td>
           <td>
             <pre class="src">&lt;div&gt;
-  &lt;div&gt;Phone:
-    &lt;input type&#x3D;&quot;text&quot; aria-label&#x3D;&quot;Phone&quot;&gt;
-  &lt;/div&gt;
+  Phone:
+  &lt;input type&#x3D;&quot;text&quot;
+         aria-label&#x3D;&quot;Phone number&quot;&gt;
 &lt;/div&gt;
 </pre>
           </td>
@@ -253,9 +253,9 @@
           <td class="test-box">
             <code class="element">input[type="text"]</code>
             <div>
-              <span id="text-04">Phone: </span>
+              <span id="text-alb">Phone: </span>
               <input type="text"
-                     aria-labelledby="text-04">
+                     aria-labelledby="text-alb">
             </div>
           </td>
           <td>
@@ -267,9 +267,9 @@
           </td>
           <td>
             <pre class="src">&lt;div&gt;
-  &lt;span id&#x3D;&quot;text-04&quot;&gt;Phone: &lt;/span&gt;
+  &lt;span id&#x3D;&quot;text-alb&quot;&gt;Phone: &lt;/span&gt;
   &lt;input type&#x3D;&quot;text&quot;
-         aria-labelledby&#x3D;&quot;text-04&quot;&gt;
+         aria-labelledby&#x3D;&quot;text-alb&quot;&gt;
 &lt;/div&gt;
 </pre>
           </td>
@@ -330,7 +330,7 @@
           <td class="test-box">
             <code class="element">input[type="text"]</code>
             <div>Phone:
-              <input type="text" title="Phone">
+              <input type="text" title="Phone number">
             </div>
           </td>
           <td>
@@ -342,7 +342,7 @@
           </td>
           <td>
             <pre class="src">&lt;div&gt;Phone:
-  &lt;input type&#x3D;&quot;text&quot; title&#x3D;&quot;Phone&quot;&gt;
+  &lt;input type&#x3D;&quot;text&quot; title&#x3D;&quot;Phone number&quot;&gt;
 &lt;/div&gt;
 </pre>
           </td>

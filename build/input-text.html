@@ -33,21 +33,21 @@
           </td>
           <td class="test-box">
             <div>
-              <label for="text-01">Phone: </label>
-              <input type="text" id="text-01">
+              <label for="text-ref">Phone: </label>
+              <input type="text" id="text-ref">
             </div>
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
+              <li>ACC NAME: Phone:</li>
               <li>FROM: label reference</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
             <pre class="src">&lt;div&gt;
-  &lt;label for&#x3D;&quot;text-01&quot;&gt;Phone: &lt;/label&gt;
-  &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;text-01&quot;&gt;
+  &lt;label for&#x3D;&quot;text-ref&quot;&gt;Phone: &lt;/label&gt;
+  &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;text-ref&quot;&gt;
 &lt;/div&gt;
 </pre>
           </td>
@@ -69,7 +69,7 @@
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
+              <li>ACC NAME: Phone:</li>
               <li>FROM: label container</li>
               <li>ROLE: textbox</li>
             </ul>
@@ -87,29 +87,29 @@
         <tr>
           <td>
             <ul>
-              <li>labeling using aria-label</li>
-              <li>markup: <code>aria-label</code> attribute</li>
+              <li>labeling using aria-labelledby</li>
+              <li>markup: <code>aria-labelledby</code> attribute</li>
             </ul>
           </td>
           <td class="test-box">
             <div>
-              <div>Phone:
-                <input type="text" aria-label="Phone">
-              </div>
+              <span id="text-alb">Phone: </span>
+              <input type="text"
+                     aria-labelledby="text-alb">
             </div>
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
-              <li>FROM: aria-label</li>
+              <li>ACC NAME: Phone:</li>
+              <li>FROM: aria-labelledby</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
             <pre class="src">&lt;div&gt;
-  &lt;div&gt;Phone:
-    &lt;input type&#x3D;&quot;text&quot; aria-label&#x3D;&quot;Phone&quot;&gt;
-  &lt;/div&gt;
+  &lt;span id&#x3D;&quot;text-alb&quot;&gt;Phone: &lt;/span&gt;
+  &lt;input type&#x3D;&quot;text&quot;
+         aria-labelledby&#x3D;&quot;text-alb&quot;&gt;
 &lt;/div&gt;
 </pre>
           </td>
@@ -118,29 +118,91 @@
         <tr>
           <td>
             <ul>
-              <li>labeling using aria-labelledby</li>
-              <li>markup: <code>aria-labelledby</code> attribute</li>
+              <li>labeling using aria-label</li>
+              <li>markup: <code>aria-label</code> attribute</li>
             </ul>
           </td>
           <td class="test-box">
             <div>
-              <span id="text-04">Phone: </span>
+              Phone:
               <input type="text"
-                     aria-labelledby="text-04">
+                     aria-label="Phone number">
             </div>
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
-              <li>FROM: aria-labelledby</li>
+              <li>ACC NAME: Phone number</li>
+              <li>FROM: aria-label</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
             <pre class="src">&lt;div&gt;
-  &lt;span id&#x3D;&quot;text-04&quot;&gt;Phone: &lt;/span&gt;
+  Phone:
   &lt;input type&#x3D;&quot;text&quot;
-         aria-labelledby&#x3D;&quot;text-04&quot;&gt;
+         aria-label&#x3D;&quot;Phone number&quot;&gt;
+&lt;/div&gt;
+</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling using placeholder attribute</li>
+              <li>markup: <code>placeholder</code> attribute</li>
+            </ul>
+          </td>
+          <td class="test-box">
+            <div>
+              Phone:
+              <input type="text"
+                     placeholder="xxx-xxx-xxxx">
+            </div>
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: xxx-xxx-xxxx</li>
+              <li>FROM: placeholder</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">&lt;div&gt;
+  Phone:
+  &lt;input type&#x3D;&quot;text&quot;
+         placeholder&#x3D;&quot;xxx-xxx-xxxx&quot;&gt;
+&lt;/div&gt;
+</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling by reference and using placeholder attribute</li>
+              <li>markup: <code>label</code> element, <code>placeholder</code> attribute</li>
+            </ul>
+          </td>
+          <td class="test-box">
+            <div>
+              <label for="text-rpl">Phone: </label>
+              <input type="text" id="text-rpl"
+                     placeholder="xxx-xxx-xxxx">
+            </div>
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Phone:</li>
+              <li>FROM: label reference</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">&lt;div&gt;
+  &lt;label for&#x3D;&quot;text-rpl&quot;&gt;Phone: &lt;/label&gt;
+  &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;text-rpl&quot;
+         placeholder&#x3D;&quot;xxx-xxx-xxxx&quot;&gt;
 &lt;/div&gt;
 </pre>
           </td>
@@ -155,19 +217,19 @@
           </td>
           <td class="test-box">
             <div>Phone:
-              <input type="text" title="Phone">
+              <input type="text" title="Phone number">
             </div>
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
+              <li>ACC NAME: Phone number</li>
               <li>FROM: title</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
             <pre class="src">&lt;div&gt;Phone:
-  &lt;input type&#x3D;&quot;text&quot; title&#x3D;&quot;Phone&quot;&gt;
+  &lt;input type&#x3D;&quot;text&quot; title&#x3D;&quot;Phone number&quot;&gt;
 &lt;/div&gt;
 </pre>
           </td>
