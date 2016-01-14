@@ -28,21 +28,58 @@
           <td class="test-box">
             <code class="element">input[type="text"]</code>
             <div>
-              <label for="text-01">Phone</label>
+              <label for="text-01">Phone: </label>
               <input type="text" id="text-01">
             </div>
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
+              <li>ACC NAME: Phone:</li>
               <li>FROM: label reference</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
             <pre class="src">&lt;div&gt;
-  &lt;label for&#x3D;&quot;text-01&quot;&gt;Phone&lt;/label&gt;
+  &lt;label for&#x3D;&quot;text-01&quot;&gt;Phone: &lt;/label&gt;
   &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;text-01&quot;&gt;
+&lt;/div&gt;
+</pre>
+          </td>
+        </tr>
+        <tr>
+          <td class="test-box">
+            <code class="element">select</code>
+            <div>
+              <label for="select-01">
+                Weather Condition:
+              </label>
+              <select id="select-01">
+                <option value="opt-1">Sunny</option>
+                <option value="opt-2">Cloudy</option>
+                <option value="opt-3">Rain</option>
+                <option value="opt-3">Snow</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Weather Condition:</li>
+              <li>FROM: label reference</li>
+              <li>ROLE: listbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">&lt;div&gt;
+  &lt;label for&#x3D;&quot;select-01&quot;&gt;
+    Weather Condition:
+  &lt;/label&gt;
+  &lt;select id&#x3D;&quot;select-01&quot;&gt;
+    &lt;option value&#x3D;&quot;opt-1&quot;&gt;Sunny&lt;/option&gt;
+    &lt;option value&#x3D;&quot;opt-2&quot;&gt;Cloudy&lt;/option&gt;
+    &lt;option value&#x3D;&quot;opt-3&quot;&gt;Rain&lt;/option&gt;
+    &lt;option value&#x3D;&quot;opt-3&quot;&gt;Snow&lt;/option&gt;
+  &lt;/select&gt;
 &lt;/div&gt;
 </pre>
           </td>
@@ -66,22 +103,59 @@
           <td class="test-box">
             <code class="element">input[type="text"]</code>
             <div>
-              <label>Phone
+              <label>Phone:
                 <input type="text">
               </label>
             </div>
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
+              <li>ACC NAME: Phone:</li>
               <li>FROM: label container</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
             <pre class="src">&lt;div&gt;
-  &lt;label&gt;Phone
+  &lt;label&gt;Phone:
     &lt;input type&#x3D;&quot;text&quot;&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</pre>
+          </td>
+        </tr>
+        <tr>
+          <td class="test-box">
+            <code class="element">select</code>
+            <div>
+              <label>
+                Weather Condition:
+                <select>
+                  <option value="opt-1">Sunny</option>
+                  <option value="opt-2">Cloudy</option>
+                  <option value="opt-3">Rain</option>
+                  <option value="opt-3">Snow</option>
+                </select>
+              </label>
+            </div>
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Weather Condition:</li>
+              <li>FROM: label container</li>
+              <li>ROLE: listbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">&lt;div&gt;
+  &lt;label&gt;
+    Weather Condition:
+    &lt;select&gt;
+      &lt;option value&#x3D;&quot;opt-1&quot;&gt;Sunny&lt;/option&gt;
+      &lt;option value&#x3D;&quot;opt-2&quot;&gt;Cloudy&lt;/option&gt;
+      &lt;option value&#x3D;&quot;opt-3&quot;&gt;Rain&lt;/option&gt;
+      &lt;option value&#x3D;&quot;opt-3&quot;&gt;Snow&lt;/option&gt;
+    &lt;/select&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </pre>
@@ -106,23 +180,56 @@
           <td class="test-box">
             <code class="element">input[type="text"]</code>
             <div>
-              <div>Phone
+              <div>Phone:
                 <input type="text" aria-label="Phone">
               </div>
             </div>
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
+              <li>ACC NAME: Phone:</li>
               <li>FROM: aria-label</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
             <pre class="src">&lt;div&gt;
-  &lt;div&gt;Phone
+  &lt;div&gt;Phone:
     &lt;input type&#x3D;&quot;text&quot; aria-label&#x3D;&quot;Phone&quot;&gt;
   &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+          </td>
+        </tr>
+        <tr>
+          <td class="test-box">
+            <code class="element">select</code>
+            <div>
+              <span>Weather Condition: </span>
+              <select aria-label="Weather Condition:">
+                <option value="opt-1">Sunny</option>
+                <option value="opt-2">Cloudy</option>
+                <option value="opt-3">Rain</option>
+                <option value="opt-3">Snow</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Weather Condition:</li>
+              <li>FROM: aria-label</li>
+              <li>ROLE: listbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">&lt;div&gt;
+  &lt;span&gt;Weather Condition: &lt;/span&gt;
+  &lt;select aria-label&#x3D;&quot;Weather Condition:&quot;&gt;
+    &lt;option value&#x3D;&quot;opt-1&quot;&gt;Sunny&lt;/option&gt;
+    &lt;option value&#x3D;&quot;opt-2&quot;&gt;Cloudy&lt;/option&gt;
+    &lt;option value&#x3D;&quot;opt-3&quot;&gt;Rain&lt;/option&gt;
+    &lt;option value&#x3D;&quot;opt-3&quot;&gt;Snow&lt;/option&gt;
+  &lt;/select&gt;
 &lt;/div&gt;
 </pre>
           </td>
@@ -146,23 +253,60 @@
           <td class="test-box">
             <code class="element">input[type="text"]</code>
             <div>
-              <span id="text-04">Phone</span>
+              <span id="text-04">Phone: </span>
               <input type="text"
                      aria-labelledby="text-04">
             </div>
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
+              <li>ACC NAME: Phone:</li>
               <li>FROM: aria-labelledby</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
             <pre class="src">&lt;div&gt;
-  &lt;span id&#x3D;&quot;text-04&quot;&gt;Phone&lt;/span&gt;
+  &lt;span id&#x3D;&quot;text-04&quot;&gt;Phone: &lt;/span&gt;
   &lt;input type&#x3D;&quot;text&quot;
          aria-labelledby&#x3D;&quot;text-04&quot;&gt;
+&lt;/div&gt;
+</pre>
+          </td>
+        </tr>
+        <tr>
+          <td class="test-box">
+            <code class="element">select</code>
+            <div>
+              <span id="select-04">
+                Weather Condition:
+              </span>
+              <select aria-labelledby="select-04">
+                <option value="opt-1">Sunny</option>
+                <option value="opt-2">Cloudy</option>
+                <option value="opt-3">Rain</option>
+                <option value="opt-3">Snow</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Weather Condition:</li>
+              <li>FROM: aria-labelledby</li>
+              <li>ROLE: listbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">&lt;div&gt;
+  &lt;span id&#x3D;&quot;select-04&quot;&gt;
+    Weather Condition:
+  &lt;/span&gt;
+  &lt;select aria-labelledby&#x3D;&quot;select-04&quot;&gt;
+    &lt;option value&#x3D;&quot;opt-1&quot;&gt;Sunny&lt;/option&gt;
+    &lt;option value&#x3D;&quot;opt-2&quot;&gt;Cloudy&lt;/option&gt;
+    &lt;option value&#x3D;&quot;opt-3&quot;&gt;Rain&lt;/option&gt;
+    &lt;option value&#x3D;&quot;opt-3&quot;&gt;Snow&lt;/option&gt;
+  &lt;/select&gt;
 &lt;/div&gt;
 </pre>
           </td>
@@ -185,20 +329,53 @@
         <tr>
           <td class="test-box">
             <code class="element">input[type="text"]</code>
-            <div>Phone
+            <div>Phone:
               <input type="text" title="Phone">
             </div>
           </td>
           <td>
             <ul>
-              <li>ACC NAME: Phone</li>
+              <li>ACC NAME: Phone:</li>
               <li>FROM: title</li>
               <li>ROLE: textbox</li>
             </ul>
           </td>
           <td>
-            <pre class="src">&lt;div&gt;Phone
+            <pre class="src">&lt;div&gt;Phone:
   &lt;input type&#x3D;&quot;text&quot; title&#x3D;&quot;Phone&quot;&gt;
+&lt;/div&gt;
+</pre>
+          </td>
+        </tr>
+        <tr>
+          <td class="test-box">
+            <code class="element">select</code>
+            <div>
+              <span>Weather Condition: </span>
+              <select title="Weather Condition:">
+                <option value="opt-1">Sunny</option>
+                <option value="opt-2">Cloudy</option>
+                <option value="opt-3">Rain</option>
+                <option value="opt-3">Snow</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Weather Condition:</li>
+              <li>FROM: title</li>
+              <li>ROLE: listbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">&lt;div&gt;
+  &lt;span&gt;Weather Condition: &lt;/span&gt;
+  &lt;select title&#x3D;&quot;Weather Condition:&quot;&gt;
+    &lt;option value&#x3D;&quot;opt-1&quot;&gt;Sunny&lt;/option&gt;
+    &lt;option value&#x3D;&quot;opt-2&quot;&gt;Cloudy&lt;/option&gt;
+    &lt;option value&#x3D;&quot;opt-3&quot;&gt;Rain&lt;/option&gt;
+    &lt;option value&#x3D;&quot;opt-3&quot;&gt;Snow&lt;/option&gt;
+  &lt;/select&gt;
 &lt;/div&gt;
 </pre>
           </td>
