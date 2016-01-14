@@ -21,7 +21,7 @@ h3 {
 }
 
 h1 {
-  font: normal 170%/100% Helvetica, Verdana, Arial, sans-serif;
+  font: normal 180%/100% Helvetica, Verdana, Arial, sans-serif;
   margin-bottom: 0;
 }
 
@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-  font: normal 140%/120% Helvetica, Verdana, Arial, sans-serif;
+  font: normal 120%/120% Helvetica, Verdana, Arial, sans-serif;
   margin-bottom: 1em;
 }
 
@@ -60,6 +60,11 @@ img {
 code {
   font-family: Courier, Monospace;
   font-weight: bold;
+}
+
+code.element {
+  display: block;
+  margin-bottom: 1.25em;
 }
 
 pre.src {
