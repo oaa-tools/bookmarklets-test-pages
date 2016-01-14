@@ -2,27 +2,22 @@
 title: "Accessible Name: Form Controls"
 ---
 
-    <h2 id="test1">Labeling Techniques: <code>input[type="text"]</code></h2>
+    <h2 id="group-1">Group 1. Labeling by reference</h2>
+    <h3>Example markup: <code>label[for]</code> element</h3>
 
-    <table aria-labelledby="test1">
+    <table aria-labelledby="group-1">
       <thead>
         <tr>
-          <th style="width: 30%">Features</th>
-          <th style="width: 20%">Test</th>
-          <th style="width: 20%">Expected Results</th>
-          <th style="width: 30%">Test Source Code</th>
+          <th style="width: 30%">Element/Test</th>
+          <th style="width: 30%">Expected Results</th>
+          <th style="width: 50em">Test Source Code</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>
-            <ul>
-              <li>labeling by reference</li>
-              <li>markup: <code>label[for]</code> element</li>
-            </ul>
-          </td>
           <td class="test-box">
-            {{> input-text-01 }}
+            <code class="element">input[type="text"]</code>
+            {{> label-ref-input-text }}
           </td>
           <td>
             <ul>
@@ -32,19 +27,28 @@ title: "Accessible Name: Form Controls"
             </ul>
           </td>
           <td>
-            <pre class="src">{{raw "input-text-01"}}</pre>
+            <pre class="src">{{raw "label-ref-input-text"}}</pre>
           </td>
         </tr>
+      </tbody>
+    </table>
 
+    <h2 id="group-2"> Group 2. Labeling by encapsulation</h2>
+    <h3>Example markup: <code>label</code> element</h3>
+
+    <table aria-labelledby="group-2">
+      <thead>
         <tr>
-          <td>
-            <ul>
-              <li>labeling by encapsulation</li>
-              <li>markup: <code>label</code> element</li>
-            </ul>
-          </td>
+          <th style="width: 30%">Element/Test</th>
+          <th style="width: 30%">Expected Results</th>
+          <th style="width: 50em">Test Source Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
           <td class="test-box">
-            {{> input-text-02}}
+            <code class="element">input[type="text"]</code>
+            {{> label-enc-input-text}}
           </td>
           <td>
             <ul>
@@ -54,19 +58,28 @@ title: "Accessible Name: Form Controls"
             </ul>
           </td>
           <td>
-            <pre class="src">{{raw "input-text-02"}}</pre>
+            <pre class="src">{{raw "label-enc-input-text"}}</pre>
           </td>
         </tr>
+      </tbody>
+    </table>
 
+    <h2 id="group-3"> Group 3. Labeling with aria-label</h2>
+    <h3>Example markup: <code>aria-label</code> attribute</h3>
+
+    <table aria-labelledby="group-3">
+      <thead>
         <tr>
-          <td>
-            <ul>
-              <li>labeling using aria-label</li>
-              <li>markup: <code>aria-label</code> attribute</li>
-            </ul>
-          </td>
+          <th style="width: 30%">Element/Test</th>
+          <th style="width: 30%">Expected Results</th>
+          <th style="width: 50em">Test Source Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
           <td class="test-box">
-            {{> input-text-03}}
+            <code class="element">input[type="text"]</code>
+            {{> label-arl-input-text}}
           </td>
           <td>
             <ul>
@@ -76,19 +89,28 @@ title: "Accessible Name: Form Controls"
             </ul>
           </td>
           <td>
-            <pre class="src">{{raw "input-text-03"}}</pre>
+            <pre class="src">{{raw "label-arl-input-text"}}</pre>
           </td>
         </tr>
+      </tbody>
+    </table>
 
+    <h2 id="group-4"> Group 4. Labeling with aria-labelledby</h2>
+    <h3>Example markup: <code>aria-labelledby</code> attribute</h3>
+
+    <table aria-labelledby="group-4">
+      <thead>
         <tr>
-          <td>
-            <ul>
-              <li>labeling using aria-labelledby</li>
-              <li>markup: <code>aria-labelledby</code> attribute</li>
-            </ul>
-          </td>
+          <th style="width: 30%">Element/Test</th>
+          <th style="width: 30%">Expected Results</th>
+          <th style="width: 50em">Test Source Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
           <td class="test-box">
-            {{> input-text-04}}
+            <code class="element">input[type="text"]</code>
+            {{> label-alb-input-text}}
           </td>
           <td>
             <ul>
@@ -98,19 +120,28 @@ title: "Accessible Name: Form Controls"
             </ul>
           </td>
           <td>
-            <pre class="src">{{raw "input-text-04"}}</pre>
+            <pre class="src">{{raw "label-alb-input-text"}}</pre>
           </td>
         </tr>
+      </tbody>
+    </table>
 
+    <h2 id="group-5"> Group 5. Labeling with title attribute</h2>
+    <h3>Example markup: <code>title</code> attribute</h3>
+
+    <table aria-labelledby="group-5">
+      <thead>
         <tr>
-          <td>
-            <ul>
-              <li>labeling using title attribute</li>
-              <li>markup: <code>title</code> attribute</li>
-            </ul>
-          </td>
+          <th style="width: 30%">Element/Test</th>
+          <th style="width: 30%">Expected Results</th>
+          <th style="width: 50em">Test Source Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
           <td class="test-box">
-            {{> input-text-05}}
+            <code class="element">input[type="text"]</code>
+            {{> label-ttl-input-text}}
           </td>
           <td>
             <ul>
@@ -120,7 +151,7 @@ title: "Accessible Name: Form Controls"
             </ul>
           </td>
           <td>
-            <pre class="src">{{raw "input-text-05"}}</pre>
+            <pre class="src">{{raw "label-ttl-input-text"}}</pre>
           </td>
         </tr>
       </tbody>

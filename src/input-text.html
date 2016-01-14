@@ -1,0 +1,127 @@
+---
+title: "Accessible Name: Form Controls"
+---
+
+    <h2 id="test1">Labeling Techniques: <code>input[type="text"]</code></h2>
+
+    <table aria-labelledby="test1">
+      <thead>
+        <tr>
+          <th style="width: 30%">Features</th>
+          <th style="width: 20%">Test</th>
+          <th style="width: 20%">Expected Results</th>
+          <th style="width: 30%">Test Source Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <ul>
+              <li>labeling by reference</li>
+              <li>markup: <code>label[for]</code> element</li>
+            </ul>
+          </td>
+          <td class="test-box">
+            {{> label-ref-input-text }}
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Phone</li>
+              <li>FROM: label reference</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">{{raw "label-ref-input-text"}}</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling by encapsulation</li>
+              <li>markup: <code>label</code> element</li>
+            </ul>
+          </td>
+          <td class="test-box">
+            {{> label-enc-input-text}}
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Phone</li>
+              <li>FROM: label container</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">{{raw "label-enc-input-text"}}</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling using aria-label</li>
+              <li>markup: <code>aria-label</code> attribute</li>
+            </ul>
+          </td>
+          <td class="test-box">
+            {{> label-arl-input-text}}
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Phone</li>
+              <li>FROM: aria-label</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">{{raw "label-arl-input-text"}}</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling using aria-labelledby</li>
+              <li>markup: <code>aria-labelledby</code> attribute</li>
+            </ul>
+          </td>
+          <td class="test-box">
+            {{> label-alb-input-text}}
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Phone</li>
+              <li>FROM: aria-labelledby</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">{{raw "label-alb-input-text"}}</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>labeling using title attribute</li>
+              <li>markup: <code>title</code> attribute</li>
+            </ul>
+          </td>
+          <td class="test-box">
+            {{> label-ttl-input-text}}
+          </td>
+          <td>
+            <ul>
+              <li>ACC NAME: Phone</li>
+              <li>FROM: title</li>
+              <li>ROLE: textbox</li>
+            </ul>
+          </td>
+          <td>
+            <pre class="src">{{raw "label-ttl-input-text"}}</pre>
+          </td>
+        </tr>
+      </tbody>
+    </table>

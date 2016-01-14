@@ -12,21 +12,26 @@
   </header>
   <main>
     
-    <h2 id="group-1">Group 1. Labeling by reference</h2>
-    <h3>Example markup: <code>label[for]</code> element</h3>
+    <h2 id="test1">Labeling Techniques: <code>input[type="text"]</code></h2>
 
-    <table aria-labelledby="group-1">
+    <table aria-labelledby="test1">
       <thead>
         <tr>
-          <th style="width: 30%">Element/Test</th>
-          <th style="width: 30%">Expected Results</th>
-          <th style="width: 50em">Test Source Code</th>
+          <th style="width: 30%">Features</th>
+          <th style="width: 20%">Test</th>
+          <th style="width: 20%">Expected Results</th>
+          <th style="width: 30%">Test Source Code</th>
         </tr>
       </thead>
       <tbody>
         <tr>
+          <td>
+            <ul>
+              <li>labeling by reference</li>
+              <li>markup: <code>label[for]</code> element</li>
+            </ul>
+          </td>
           <td class="test-box">
-            <code class="element">input[type="text"]</code>
             <div>
               <label for="text-01">Phone</label>
               <input type="text" id="text-01">
@@ -47,24 +52,15 @@
 </pre>
           </td>
         </tr>
-      </tbody>
-    </table>
 
-    <h2 id="group-2"> Group 2. Labeling by encapsulation</h2>
-    <h3>Example markup: <code>label</code> element</h3>
-
-    <table aria-labelledby="group-2">
-      <thead>
         <tr>
-          <th style="width: 30%">Element/Test</th>
-          <th style="width: 30%">Expected Results</th>
-          <th style="width: 50em">Test Source Code</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
+          <td>
+            <ul>
+              <li>labeling by encapsulation</li>
+              <li>markup: <code>label</code> element</li>
+            </ul>
+          </td>
           <td class="test-box">
-            <code class="element">input[type="text"]</code>
             <div>
               <label>Phone
                 <input type="text">
@@ -87,24 +83,15 @@
 </pre>
           </td>
         </tr>
-      </tbody>
-    </table>
 
-    <h2 id="group-3"> Group 3. Labeling with aria-label</h2>
-    <h3>Example markup: <code>aria-label</code> attribute</h3>
-
-    <table aria-labelledby="group-3">
-      <thead>
         <tr>
-          <th style="width: 30%">Element/Test</th>
-          <th style="width: 30%">Expected Results</th>
-          <th style="width: 50em">Test Source Code</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
+          <td>
+            <ul>
+              <li>labeling using aria-label</li>
+              <li>markup: <code>aria-label</code> attribute</li>
+            </ul>
+          </td>
           <td class="test-box">
-            <code class="element">input[type="text"]</code>
             <div>
               <div>Phone
                 <input type="text" aria-label="Phone">
@@ -127,24 +114,15 @@
 </pre>
           </td>
         </tr>
-      </tbody>
-    </table>
 
-    <h2 id="group-4"> Group 4. Labeling with aria-labelledby</h2>
-    <h3>Example markup: <code>aria-labelledby</code> attribute</h3>
-
-    <table aria-labelledby="group-4">
-      <thead>
         <tr>
-          <th style="width: 30%">Element/Test</th>
-          <th style="width: 30%">Expected Results</th>
-          <th style="width: 50em">Test Source Code</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
+          <td>
+            <ul>
+              <li>labeling using aria-labelledby</li>
+              <li>markup: <code>aria-labelledby</code> attribute</li>
+            </ul>
+          </td>
           <td class="test-box">
-            <code class="element">input[type="text"]</code>
             <div>
               <span id="text-04">Phone</span>
               <input type="text"
@@ -167,24 +145,15 @@
 </pre>
           </td>
         </tr>
-      </tbody>
-    </table>
 
-    <h2 id="group-5"> Group 5. Labeling with title attribute</h2>
-    <h3>Example markup: <code>title</code> attribute</h3>
-
-    <table aria-labelledby="group-5">
-      <thead>
         <tr>
-          <th style="width: 30%">Element/Test</th>
-          <th style="width: 30%">Expected Results</th>
-          <th style="width: 50em">Test Source Code</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
+          <td>
+            <ul>
+              <li>labeling using title attribute</li>
+              <li>markup: <code>title</code> attribute</li>
+            </ul>
+          </td>
           <td class="test-box">
-            <code class="element">input[type="text"]</code>
             <div>Phone
               <input type="text" title="Phone">
             </div>
